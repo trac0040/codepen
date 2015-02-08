@@ -11,8 +11,21 @@
 @mixin input{
   background-color: $light;
   color: $dark;
+  border-bottom: 4px solid $dark;
   margin-bottom: 1em;
   padding: 0 16px;
   width: 100%;
   height: 50px;
+}
+
+@mixin button($bg-colour, $text-colour, $bg-hover){
+  background: $bg-colour;
+  color: $text-colour;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  &:hover{
+    background: $bg-hover;
+  }
 }
