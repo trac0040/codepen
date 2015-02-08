@@ -44,7 +44,7 @@ after { clear: both; }
   width: 80%;
   max-width: 340px;
   background: url("/img/landscape.jpg");
-  background-size: 210% 210%
+  background-size: 200% 200%
 }
 
 #login form input[type="email"] {
@@ -56,7 +56,7 @@ after { clear: both; }
 }
 
 #login form input[type="submit"] {
-  @include button($dark, #fff, $blue);
+  @include button($dark, #fff, $grey);
   @include ease(all, 300ms, ease-in-out)
 }
 
