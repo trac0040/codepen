@@ -1,10 +1,5 @@
 // Mixins
 
-@mixin zero{
-  margin: 0;
-  padding: 0;
-}
-
 @mixin ease($transition-property, $transition-time, $method) {
     -webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
@@ -13,24 +8,11 @@
     transition: $transition-property $transition-time $method;
 }
 
-// Hide text in an element
-@mixin hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  display: block; // inline elements with this won't hide text unless set to block
-}
-
-@mixin show-text{
-  text-indent: 0;
-  white-space: normal;
-  overflow: visible;
-}
-
-@mixin nav-item($bg-color, $hover-color){
-  background-color: $bg-color;
-  color: $text-color;
-  &:hover{
-    background-color: $hover-color;
-  }
+@mixin input{
+  background-color: $light;
+  color: $dark;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 100%;
+  height: 50px;
 }
